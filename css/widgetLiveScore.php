@@ -704,4 +704,7 @@ section.widgetLiveScore section {
 .wp-league_name.active .table__body_fixtures{
     display: block !important;
 }
+.wp-league_name .table__body_fixtures > a{
+    padding-top: 0 !important;
+}
 </style>

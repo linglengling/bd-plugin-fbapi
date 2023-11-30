@@ -500,7 +500,6 @@
         var socket = new WebSocket('wss://wss.apifootball.com/livescore?Widgetkey=' + Widgetkey + '&timezone=' + getTimeZone());
         // Define the
         socket.onmessage = function (e) {
-//                alert( e.data );
 
             if (e.data) {
                 var data = JSON.parse(e.data);
