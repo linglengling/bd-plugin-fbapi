@@ -683,4 +683,25 @@ section.widgetLiveScore section {
         box-sizing: border-box;
     }
 }
+
+.wp-league_name {
+    margin-bottom: 5px;
+}
+.wp-league_name .flex-table.header{
+    cursor: pointer;
+    position: relative;
+}
+.wp-league_name .flex-table.header:before{
+    content: "\25bc";
+    color: #fff;
+    right: 8px;
+    position: absolute;
+    top: 8px;
+}
+.wp-league_name .table__body_fixtures{
+    display: none !important;
+}
+.wp-league_name.active .table__body_fixtures{
+    display: block !important;
+}
 </style>
