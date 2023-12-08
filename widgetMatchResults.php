@@ -8,7 +8,7 @@
     <?php include ('css/widgetMatchResults.php');?>
 	<script src="js/jquery.js"></script>
 	<script src="js/jqueryGlobals.php"></script>
-    <script src="js/jquery.widgetMatchResults.js" type="text/javascript"></script>
+    <script src="js/jquery.widgetMatchResults.js?ver=1.2" type="text/javascript"></script>
 </head>
 <body>
 	<header>

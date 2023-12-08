@@ -4,7 +4,7 @@
     Plugin URI: https://apifootball.com/wordpress/
     Description: Add Football Widget on your website.
     Author: apifootball.com
-    Version: 1.0.6
+    Version: 1.0.7
     Author URI: https://apifootball.com
     */
 
@@ -29,6 +29,18 @@ function footballwidgets(){  ?>
     <?php include ('css/widgetLeague.php');?>
     <?php include ('css/widgetLeagueInfo.php');?>
 
+
+   
+    <script type="module">
+        import translate from "<?php echo plugin_dir_url( __FILE__ ) ?>/data-lang.js";
+        
+        // function NTNtxt(){
+        //     alert('asdfsdfsdf');
+        // }
+    </script>
+
+
+
     <div class="headerMenuDisplay">
     <div>
         <div class="container-football-widget">
@@ -43,6 +55,8 @@ function footballwidgets(){  ?>
         <section id="widgetLiveScore"></section>
     </div>
     </div>
+
+    
     <script type="text/javascript">
 
         function setCookie(key, value, expiry) {
@@ -57,6 +71,8 @@ function footballwidgets(){  ?>
         setCookie('ms_color_three','<?php echo ms_Main::$settings["ms_color_three"]; ?>','365');
 
         jQuery(document).ready(function() {
+
+
 
             <?php $cleanPreferentialLeaguesData = str_replace(' ', "', '", ms_Main::$settings['ms_preferential_leagues']); ?>
 
