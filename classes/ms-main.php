@@ -8,7 +8,7 @@ if ( ! class_exists( 'ms_Main' ) ) {
 	class ms_Main extends ms_Module {
 
 		protected $modules;
-		const VERSION    = '1.0';
+		const VERSION    = '1.1';
 		const PREFIX     = 'ms-';
         const REQUIRED_CAPABILITY = 'administrator';
 
